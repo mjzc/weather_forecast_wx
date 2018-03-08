@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "根据城市获取天气",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

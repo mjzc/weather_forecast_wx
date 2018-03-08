@@ -1,0 +1,66 @@
+page {
+  display: block;
+  min-height: 100%;
+  background-color: #fff;
+}
+
+.city-box {
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 30rpx;
+  display:flex;
+}
+
+.moreCity {
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  background-color: #7cb5ec;
+  border-radius: 10rpx;
+  display: inline-block;
+  color: #fff;
+  margin-left: 10rpx;
+}
+
+.all-day {
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+}
+
+.mr-b {
+  margin-bottom: 10rpx;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.day-box {
+  border-right: 1rpx solid #eee;
+  padding:0 5rpx;
+  box-sizing: border-box;
+}
+
+.top, .bottom {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bottom {
+  margin-top: 200px;
+}
+
+.weather-img {
+  width: 60.5rpx;
+  height: 60.5rpx;
+}
+
+.canvas {
+  position: absolute;
+  top: 170rpx;
+}

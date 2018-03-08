@@ -1,0 +1,50 @@
+<view class="city-box">
+  <text>{{currentCity}}</text>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+    <text class="moreCity">+</text>
+  </picker>
+</view>
+
+
+
+<view class="">
+
+  <scroll-view class="all-day" scroll-x="true">
+
+
+    <view class="box">
+      <view class="day-box" wx:for="{{weatherInfo}}">
+        <view class="top" style="width:{{dayWidth}}">
+          <view class="mr-b">{{item.day}}</view>
+          <view class="mr-b">{{item.date}}</view>
+          <view class="mr-b">{{item.regimeTop}}</view>
+          <view class="mr-b">
+            <image src="{{item.imgTop}}" class="weather-img"></image>
+          </view>
+        </view>
+
+        <view class="bottom" style="{{dayWidth}}">
+          <view class="mr-b">
+            <image src="{{item.imgBottom}}" class="weather-img"></image>
+          </view>
+          <!-- <view class="mr-b">{{item.regimeBottom}}</view> -->
+          <view class="mr-b">{{item.wind}}</view>
+          <view class="mr-b">{{item.windLevel}}</view>
+          <view class="mr-b">{{item.grade}}</view>
+        </view>
+
+      </view>
+
+
+
+
+      <canvas style="width: {{canvasWidth}}; height: {{canvasHeigth}};" class="canvas" canvas-id="temperatureCanvas"></canvas>
+    </view>
+
+
+
+
+  </scroll-view>
+
+
+</view>
